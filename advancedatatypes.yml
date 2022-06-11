@@ -1,0 +1,89 @@
+student: !!seq
+- roll_no
+- marks
+- age
+- number
+---
+#Some of the keys will be empty , this is known as sparse seq
+#Sparse Sequence
+sparseexample:
+ hey
+ how
+
+ NULL
+ sup
+---
+
+#Nested Sequences
+
+- fruits
+ - apple
+ - mango
+ - banana
+- veggies
+ - tom
+ - aalo
+ - lentil
+
+
+ #Key value pairs are called maps
+ #nested Mapping: Map inside a map
+
+ name: Nimish
+ role:
+ -age: 1
+ -role: working
+
+ Name: Nimish Pandey
+
+ Bio:
+ - College: {Roll no: 50046903,Stream: IT Infra}
+ - Company: {Name: Nim,PSNo: 10661716}
+
+#Pairs and keys can have duplicate values
+#!!pairs
+
+pairs example: !!pairs
+ - job: Student
+ - job: Working
+
+ #same as
+ pairs example: !!pairs {job: student, job: teach}
+
+ #!!set will alow you to have unique values
+
+ names: !!set
+ ? kunak
+ ? bharat
+ ? rahul
+
+
+ #DICTIONARY
+ #!!omap
+
+ INFORMATION: !!omap
+ -Nimish:
+  -Basic:
+   -ID: 123
+   -roll: 990
+  -LTI:
+   -Name: Larsen
+   -Loc: Pune
+  -UPES:
+   -Location: Ddn
+   -area: UK
+
+
+#Reusing values usin Anchors
+
+liking: &likes
+ favgame: Elden Ring
+ favgame2: CSGO
+
+person1:
+ Name: Nimish
+ <<: *likes
+
+perosn2:
+ Name: Aish
+ <<: *likes

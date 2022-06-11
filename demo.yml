@@ -1,0 +1,16 @@
+"Apple" : "This is an apple"
+1: "This is my number"
+---
+#lists
+- apple
+- banana
+- mango
+---
+cities:
+ - New Delhi
+ - Mumbai
+ - Lucknow
+ - Gujrat
+...
+
+cities: [ND, Mm, aa]

@@ -1,0 +1,49 @@
+#string variables
+myself: Nimish
+a: "Nimish"
+b: 'Nimish'
+
+---
+
+bio: |
+ My name is nimish
+ jdsnfdjsndfjnfd
+
+#Writing single line as multilple lines
+
+bio2: >
+ This 
+ will look like 
+ multiple lines 
+ but is a single line
+#same as
+bio2: This will look like multiple lines but is a single line.
+-----
+#INTEGER
+marks: 48
+int: 12
+floatype: 4555.78
+-----
+#boolean
+booleanValue: No #n/N/False/false/FALSE
+#OR
+boolean: !!boolean No
+---
+#Specifying the type
+
+number: !!int 1234
+negative: !!int -56
+bin: !!int 0b1100
+commavalue: !!int +547_000 #547,000
+string: !!str nimish
+exponentialnumber: 6.343E34
+#Floating point number
+marks: !!floatype 56.89
+ 
+#NULL
+surname: !!NULL NULL
+#OR
+~: this is a null type
+
+#Dates and Time
+date: !!timestamp 12/3/2022

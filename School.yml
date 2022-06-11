@@ -1,0 +1,16 @@
+School:
+ name: St Francis College
+ Principal: Reverent John
+ Students:
+  Student1:
+   Name: Nimish
+   rollno: 10
+  Student2:
+   Name: Pandey
+   rollno: 20
+  Student3:
+   Name: Aishwarya
+   roll: 33
+ 
+
+---
